@@ -1,0 +1,13 @@
+train: ../train/images
+val: ../valid/images
+test: ../test/images
+
+nc: 1
+names: ['UNKEPT_FACADE']
+
+roboflow:
+  workspace: workspace-2-iz9jz
+  project: walls-2tpff
+  version: 1
+  license: CC BY 4.0
+  url: https://universe.roboflow.com/workspace-2-iz9jz/walls-2tpff/dataset/1

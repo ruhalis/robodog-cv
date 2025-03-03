@@ -169,3 +169,11 @@ cython_debug/
 
 # PyPI configuration file
 .pypirc
+/cracksdataset
+/datasets/cracks
+/datasets/fire
+/datasets/general
+/datasets/light
+/fire1
+/fire2
+/light
