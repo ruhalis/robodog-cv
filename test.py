@@ -2,10 +2,10 @@ import cv2
 import matplotlib.pyplot as plt
 from ultralytics import YOLO
 # Load your trained model
-model = YOLO("runs\\detect\\train10\\weights\\best.pt")
+model = YOLO("runs\\detect\\train3\\weights\\best.pt")
 
 # Run inference on a single image
-results = model.predict(source="datasets\\general\\train\\images\\ds1_700_yang_jpg.rf.ea4bb9679af72a19602e8ad7822cb78a.jpg", conf=0.5, show=True)
+results = model.predict(source="datasets\\general\\test\\images\\ds2_test_ds2_test_images_jpeg.rf.8fe4bbc7081e65f3a1d2c0c13f6830a3.jpg", conf=0.5, show=True)
 
 # If you want to save predictions:
 # results = model.predict(source="path/to/test_image.jpg", conf=0.25, save=True)
