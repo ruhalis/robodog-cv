@@ -1,0 +1,13 @@
+train: ../train/images
+val: ../valid/images
+test: ../test/images
+
+nc: 4
+names: ['lamp1_off', 'lamp1_on', 'lamp2_off', 'lamp2_on']
+
+roboflow:
+  workspace: b-worawut-wizard
+  project: lamp-detection
+  version: 2
+  license: CC BY 4.0
+  url: https://universe.roboflow.com/b-worawut-wizard/lamp-detection/dataset/2

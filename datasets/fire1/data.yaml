@@ -1,0 +1,13 @@
+train: ../train/images
+val: ../valid/images
+test: ../test/images
+
+nc: 3
+names: ['Fire Extinguisher', 'cabinet', 'hose']
+
+roboflow:
+  workspace: mole-detection-vdnqx
+  project: fire-extinguisher-detection-u1ibl-jjhrd
+  version: 3
+  license: CC BY 4.0
+  url: https://universe.roboflow.com/mole-detection-vdnqx/fire-extinguisher-detection-u1ibl-jjhrd/dataset/3

@@ -13,3 +13,6 @@ python scripts/merging_datasets_fire.py --dataset1 fire1 --dataset2 fire2 --outp
 
 
 .\venv\Scripts\activate
+
+
+yolo detect train model=yolo11n.pt data=C:\Users\ruhalis\Documents\robodog-cv\datasets\general\data.yaml epochs=100 imgsz=640 batch=8 device=0
