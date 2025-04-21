@@ -1,8 +1,11 @@
+numpy
 opencv-python
+pillow
+pyyaml
 ultralytics
 torch
 torchvision
-numpy
 matplotlib
-Pillow
+pandas
 tqdm
+scikit-learn
