@@ -24,11 +24,12 @@ dataset/
 ```
 python -m venv venv
 .\venv\Scripts\activate
+source venv/bin/activate
 ```
 
 2. Install dependencies:
 ```
-pip install numpy opencv-python pillow pyyaml
+pip install -r requirements.txt
 ```
 
 ## Scripts
@@ -48,18 +49,19 @@ pip install numpy opencv-python pillow pyyaml
 - **Create YOLO Annotations**: Generate annotations for defect classes
   ```
   python scripts/run_annotation.py
+  # uses create_dataset_yaml.py and create_yolo_annotations.py
   ```
 
 ### Dataset Merging
 
-- **Merge Two Datasets**:
-  ```
-  python scripts/merge_2.py --dataset1 datasets/cracks --dataset2 datasets/light --output datasets/merged
-  ```
-
 - **Merge Three Datasets**:
   ```
   python scripts/merge_3_datasets.py --dataset1 datasets/cracks --dataset2 datasets/light --dataset3 datasets/fire --output datasets/general
+  ```
+
+- **Merge Four Datasets**:
+  ```
+  python scripts/merge_4_datasets.py --dataset1 datasets/cracks --dataset2 datasets/light --dataset3 datasets/fire --dataset4 datasets/fire --output datasets/general
   ```
 
 - **Modify Dataset Labels**:
