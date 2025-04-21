@@ -1,4 +1,4 @@
-# RoboDog CV Project
+# YOLO Detection and Tracking ready repo
 
 ## Overview
 This project provides tools for object detection using YOLOv11 for recognizing defects and infrastructure elements including cracks, fire equipment, lights, and moisture. It includes scripts for dataset preparation, merging, and training.
