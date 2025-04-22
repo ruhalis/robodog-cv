@@ -1,4 +1,4 @@
-# YOLO Detection and Tracking ready repo
+# YOLO detection and tracking
 
 ## Overview
 This project provides tools for object detection using YOLOv11 for recognizing defects and infrastructure elements including cracks, fire equipment, lights, and moisture. It includes scripts for dataset preparation, merging, and training.
@@ -81,6 +81,33 @@ Alternatively, use the ultralytics YOLO command:
 yolo detect train model=yolo11s.pt data=datasets/endterm_final/data.yaml epochs=100 imgsz=640 batch=8 device=0
 ```
 
+## Real-time Detection and Tracking
+
+### Object Detection
+
+The project includes a real-time object detection script that uses YOLOv11 with webcam input:
+
+```
+python detection.py
+```
+
+This script loads a trained YOLOv11 model and processes video frames from your webcam, displaying detection results in real-time. Press 'q' to quit the detection window.
+
+### Object Tracking
+
+For applications requiring object tracking over time, use the tracking script:
+
+```
+python tracking.py
+```
+
+This script combines YOLOv11 detection with DeepSORT tracking to:
+- Detect objects in each frame
+- Assign consistent IDs to objects across frames
+- Count unique objects seen
+- Display tracking information in real-time
+
+The tracking system is particularly useful for monitoring and counting defects or equipment during inspections.
 
 ## Model Files
 
