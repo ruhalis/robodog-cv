@@ -19,8 +19,8 @@ dataset1_mapping = {  # general
     1: "fire_extinguisher",
     2: "cabinet",
     3: "hose",
-    4: "light_off",
-    5: "light_on"
+    4: "nan",
+    5: "nan"
 }
 
 

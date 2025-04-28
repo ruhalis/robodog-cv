@@ -61,7 +61,7 @@ pip install -r requirements.txt
 
 - **Merge Four Datasets**:
   ```
-  python scripts/merge_4_datasets.py --dataset1 datasets/cracks --dataset2 datasets/light --dataset3 datasets/fire --dataset4 datasets/fire --output datasets/general
+  python scripts/merge_4_datasets.py --dataset1 datasets/general --dataset2 datasets/light5_split --dataset3 datasets/train-curat-dataset-yolo --dataset4 datasets/moisture --output datasets/final
   ```
 
 - **Modify Dataset Labels**:
@@ -79,6 +79,7 @@ python train.py --data datasets/light5_split/data.yaml --weights yolo11s.pt
 Alternatively, use the ultralytics YOLO command:
 ```
 yolo detect train model=yolo11s.pt data=datasets/endterm_final/data.yaml epochs=100 imgsz=640 batch=8 device=0
+yolo detect train model=models/yolo11s.pt data=datasets/final/data.yaml epochs=100 imgsz=640 batch=8 device=0
 ```
 
 ## Real-time Detection and Tracking
@@ -113,3 +114,9 @@ The tracking system is particularly useful for monitoring and counting defects o
 
 - `yolo11s.pt`: YOLOv11 small model (for training)
 - `yolo11m.pt`: YOLOv11 medium model (for training)
+
+
+
+
+
+Create data yaml for dataset script
