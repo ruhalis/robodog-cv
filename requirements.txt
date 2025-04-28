@@ -10,3 +10,4 @@ pandas
 tqdm
 scikit-learn
 deep-sort-realtime
+seaborn
