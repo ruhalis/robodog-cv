@@ -2,12 +2,10 @@ import cv2
 import numpy as np
 import time
 
-# ---- parameters you may want to tweak ----
 CAM_ID           = 0          # USB-camera index
 CENTER_FRACTION  = 0.33       # side length of the square ROI as a fraction of frame size
 MIN_RED_RATIO    = 0.10       # threshold for detecting a “press”
 COOLDOWN_SECONDS = 1.0        # debounce time after a detection
-# -----------------------------------------
 
 def main():
     cap = cv2.VideoCapture(CAM_ID)
